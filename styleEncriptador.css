@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    background:#F3F5FC;
+    width: 90%;
+    margin:40px
+}
+
+#logo-Alura{
+    margin: 10px 5px 20px;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+.contenedores{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px;
+    gap: 25px;
+}
+.contenedor-piepag{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.contenedor-botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 5px;
+}
+button{
+    height: 3em;
+    padding: 5px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#encriptar{
+    background:#0A3871;
+    color:#D8DFE8;
+}
+button:hover {
+    font-weight: bold;
+    font-size: 24px;
+    cursor:pointer;
+    transition: 1s all;  
+}
+#desencriptar, #copiar{
+    color:#0A3871;
+}
+.contenedor-mensaje{
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+textarea{
+    border:none;
+    background: none;
+    width: 80%;
+    height: 12em;
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#0A3871;
+}
+
+.contenedor-resultado{
+    display:grid;
+    grid-template-rows: auto 1fr 1fr;
+    height: 45em;
+    border-radius: 32px;
+    background:#FFFFFF;
+    align-items: center;
+    text-align: center;
+}
+#muñeco{
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    margin: 10%;
+}
+#status{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contenedor-copiar{
+    padding: 24px;
+    border: 1px;
+}
+#copiar{
+    width: 70%;
+}
+
+@media screen and (max-width: 900px){
+    .contenedores{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2px;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contenedores{
+        display:grid;
+        grid-template-columns: auto;
+        padding: 2px;
+        gap: 5px;
+    }
+
+}
